@@ -9,7 +9,7 @@ services:
       supported_content:
         - urn:stix.mitre.org:json:2.1
       protocol_bindings:
-        - urn:taxii.mitre.org:protocol:http:1.0
+        - urn:taxii.mitre.org:protocol:https:1.0
 
     - id: discovery
       type: discovery
@@ -21,14 +21,14 @@ services:
         - collection_management
         - poll
       protocol_bindings:
-        - urn:taxii.mitre.org:protocol:http:1.0
+        - urn:taxii.mitre.org:protocol:https:1.0
 
     - id: collection_management
       type: collection_management
       address: /services/collection-management
       description: Collection Management Service
       protocol_bindings:
-        - urn:taxii.mitre.org:protocol:http:1.0
+        - urn:taxii.mitre.org:protocol:https:1.0
 
     - id: poll
       type: poll
@@ -39,7 +39,7 @@ services:
       max_result_size: 10
       authentication_required: yes
       protocol_bindings:
-        - urn:taxii.mitre.org:protocol:http:1.0
+        - urn:taxii.mitre.org:protocol:https:1.0
 
 collections:
   - name: apt
