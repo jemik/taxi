@@ -56,4 +56,4 @@ accounts:
   - username: guest
     password: guest
     permissions:
-      cs2: modify
+      apt: modify
